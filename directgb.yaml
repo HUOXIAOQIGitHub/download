@@ -12,8 +12,10 @@ DOMAIN-SUFFIX,ptchina.org
 DOMAIN,pt.0ff.cc
 # 观众
 DOMAIN-SUFFIX,audiences.me
+DOMAIN,tracker.cinefiles.info
 # 馒头
 DOMAIN,kp.m-team.cc
+DOMAIN,xp.m-team.io
 # 幼儿园
 DOMAIN,daydream.dmhy.best
 # pt分享站
@@ -32,8 +34,9 @@ DOMAIN-SUFFIX,hddolby.com
 DOMAIN-SUFFIX,1ptba.com
 # 彩虹岛
 DOMAIN-SUFFIX,chdbits.co
+DOMAIN-SUFFIX,chdbits.xyz
+DOMAIN-SUFFIX,ptchdbits.co
 # 好大
-DOMAIN,hdarea.club
 DOMAIN-SUFFIX,hdarea.club
 # 海带
 DOMAIN-SUFFIX,hd.ai
@@ -41,8 +44,6 @@ DOMAIN-SUFFIX,hd.ai
 DOMAIN-SUFFIX,ptnic.net
 # Oshen
 DOMAIN-SUFFIX,oshen.win
-# PT时间
-DOMAIN-SUFFIX,pttime.org
 #HD VIDEO
 DOMAIN-SUFFIX,hdvideo.one
 # IPT
@@ -54,8 +55,8 @@ DOMAIN-SUFFIX,ptsbao.club
 # 备胎
 DOMAIN-SUFFIX,beitai.pt
 # 憨憨
-DOMAIN,hhanclub.top
 DOMAIN-SUFFIX,hhanclub.top
+DOMAIN-SUFFIX,hhan.club
 # 猪猪
 DOMAIN-SUFFIX,piggo.me
 # 阿童木
@@ -88,33 +89,22 @@ DOMAIN-SUFFIX,hdpt.xyz
 DOMAIN-SUFFIX,hdsky.me
 # 瓷器
 DOMAIN-SUFFIX,hdchina.org
-# 丐帮
-DOMAIN-SUFFIX,gainbound.net
 # 时光
 DOMAIN-SUFFIX,hdtime.org
 # 我堡
 DOMAIN-SUFFIX,ourbits.club
 # TTG
 DOMAIN-SUFFIX,totheglory.im
-# 国语视界
-DOMAIN-SUFFIX,cnlang.org
 # opencd
 DOMAIN-SUFFIX,open.cd
-DOMAIN,open.cd
-DOMAIN-SUFFIX,hetzner.com
-DOMAIN,hetzner.com
 # 鲨鱼
 DOMAIN,tracker.sharkpt.net
 #北洋园
 DOMAIN-SUFFIX,tjupt.org
 # 海豚
 DOMAIN-SUFFIX,dicmusic.club
+DOMAIN-SUFFIX,dicmusic.com
 # 兽
 DOMAIN-SUFFIX,hd4fans.org
-# AMY
-DOMAIN-SUFFIX,amytele.net
-DOMAIN-SUFFIX,amyconvert.com
 # 红叶
 DOMAIN-SUFFIX,leaves.red
-# magpie服
-DOMAIN-SUFFIX,lincent.org
