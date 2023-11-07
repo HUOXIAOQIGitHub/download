@@ -113,7 +113,3 @@ DOMAIN-SUFFIX,passthepopcorn.me
 #amy
 DOMAIN-SUFFIX,amyconvert.com
 DOMAIN-SUFFIX,flmsgo.xyz
-#WIFI
-SUBNET,TYPE:WIFI
-SUBNET,SSID:Akuma_5G
-SUBNET,SSID:Akuma
