@@ -1,6 +1,5 @@
-# 内容：PT站点
-
-
+IP-CIDR,0.0.0.0/8,no-resolve
+IP-CIDR,128.0.0.0/1,no-resolve
 # 猫站
 DOMAIN-SUFFIX,pterclub.com
 # 梓喵
