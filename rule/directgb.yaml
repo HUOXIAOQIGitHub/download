@@ -107,14 +107,3 @@ DOMAIN-SUFFIX,passthepopcorn.me
 #amy
 DOMAIN-SUFFIX,amyconvert.com
 DOMAIN-SUFFIX,flmsgo.xyz
-#p2p客戶端
-PROCESS-NAME,aria2c
-PROCESS-NAME,fdm
-PROCESS-NAME,Folx
-PROCESS-NAME,NetTransport
-PROCESS-NAME,Thunder
-PROCESS-NAME,Transmission
-PROCESS-NAME,uTorrent
-PROCESS-NAME,WebTorrent
-PROCESS-NAME,WebTorrent Helper
-PROCESS-NAME,qbittorrent
