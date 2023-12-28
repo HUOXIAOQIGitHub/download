@@ -1,7 +1,6 @@
 # 猫站
 DOMAIN-SUFFIX,pterclub.com
 # 梓喵
-DOMAIN-SUFFIX,azusa.ru
 DOMAIN-SUFFIX,azusa.wiki
 # 铂金学院
 DOMAIN-SUFFIX,ptchina.org
@@ -69,11 +68,7 @@ DOMAIN-SUFFIX,ihdbits.me
 # 城市
 DOMAIN,hdcity.leniter.org
 # 月月
-DOMAIN,pt.keepfrds.com
 DOMAIN-SUFFIX,keepfrds.com
-# 柠檬
-DOMAIN-SUFFIX,lemonhd.org
-DOMAIN,announce.leaguehd.com
 # 杏林
 DOMAIN-SUFFIX,xingtan.one
 # 家园
@@ -94,7 +89,6 @@ DOMAIN-SUFFIX,totheglory.im
 DOMAIN-SUFFIX,open.cd
 #北洋园
 DOMAIN-SUFFIX,tjupt.org
-DOMAIN-SUFFIX,yola.fun
 # 海豚
 DOMAIN-SUFFIX,dicmusic.club
 DOMAIN-SUFFIX,dicmusic.com
@@ -104,6 +98,3 @@ DOMAIN-SUFFIX,hd4fans.org
 DOMAIN-SUFFIX,leaves.red
 #ptp
 DOMAIN-SUFFIX,passthepopcorn.me
-#amy
-DOMAIN-SUFFIX,amyconvert.com
-DOMAIN-SUFFIX,flmsgo.xyz
