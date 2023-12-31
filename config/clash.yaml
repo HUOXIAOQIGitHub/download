@@ -1,0 +1,425 @@
+proxy-providers:
+  #机场名字：
+  Maker:
+    #订阅链接：
+    url: 
+    #链接更新间隔时长：单位秒
+    interval: 86400
+  Amy:
+    url: 
+    interval: 86400
+#代理策略组
+proxy-groups:
+  - name: 🐱 PROXY
+    proxies:
+      - HK 香港
+      - TW 台湾
+      - SG 新加坡
+      - US 美国
+      - DIRECT
+    type: select
+  - name: 🚀 手动切换
+    proxies:
+    type: select
+    use:
+      - Amy
+      - Maker
+  - name: 📲 Telegram
+    proxies:
+      - 🐱 PROXY
+      - HK 香港
+      - TW 台湾
+      - SG 新加坡
+    type: select
+  - name: 💬 OpenAi
+    proxies:
+      - US 美国
+      - TW 台湾
+      - SG 新加坡
+    type: select
+  - name: 📹 YouTube
+    proxies:
+      - 🐱 PROXY
+      - HK 香港
+      - TW 台湾
+      - SG 新加坡
+    type: select
+  - name: 🎥 Netflix
+    proxies:
+      - HK 香港
+      - TW 台湾
+      - SG 新加坡
+      - US 美国
+    type: select
+  - name: 🎥 DisneyPlus
+    proxies:
+      - DIRECT
+      - HK 香港
+      - TW 台湾
+      - SG 新加坡
+    type: select
+  - name: 🎥 TikTok
+    proxies:
+      - JP 日本
+      - TW 台湾
+      - SG 新加坡
+    type: select
+  - name: 📺 巴哈姆特
+    proxies:
+      - TW 台湾
+      - HK 香港
+      - SG 新加坡
+    type: select
+  - name: 📺 哔哩哔哩
+    proxies:
+      - 🎯 全球直连
+      - HK 香港
+      - TW 台湾
+      - SG 新加坡
+    type: select
+  - name: 🌍 国外媒体
+    proxies:
+      - 🐱 PROXY
+      - TW 台湾
+      - HK 香港
+      - SG 新加坡
+    type: select
+  - name: 🌏 国内媒体
+    proxies:
+      - DIRECT
+      - TW 台湾
+      - HK 香港
+      - SG 新加坡
+    type: select
+  - name: 📢 谷歌FCM
+    proxies:
+      - DIRECT
+      - TW 台湾
+      - HK 香港
+      - SG 新加坡
+    type: select
+  - name: Ⓜ️ 微软Bing
+    proxies:
+      - DIRECT
+      - TW 台湾
+      - HK 香港
+      - SG 新加坡
+    type: select
+  - name: Ⓜ️ 微软云盘
+    proxies:
+      - DIRECT
+      - TW 台湾
+      - HK 香港
+      - SG 新加坡
+    type: select
+  - name: Ⓜ️ 微软服务
+    proxies:
+      - DIRECT
+      - TW 台湾
+      - HK 香港
+      - SG 新加坡
+    type: select
+  - name: 🍎 Apple
+    proxies:
+      - DIRECT
+      - TW 台湾
+      - HK 香港
+      - SG 新加坡
+    type: select
+  - name: 🎮 游戏平台
+    proxies:
+      - 🐱 PROXY
+      - TW 台湾
+      - HK 香港
+      - SG 新加坡
+    type: select
+  - name: 🎯 全球直连
+    proxies:
+      - DIRECT
+      - 🐱 PROXY
+      - TW 台湾
+      - HK 香港
+      - SG 新加坡
+    type: select
+  - name: 🛑 广告拦截
+    proxies:
+      - DIRECT
+      - DIRECT
+    type: select
+  - name: 🐟 漏网之鱼
+    proxies:
+      - 🐱 PROXY
+      - TW 台湾
+      - HK 香港
+      - SG 新加坡
+    type: select
+  # 基于地区分组
+  - name: HK 香港
+    filter: "澳门|🇲🇴|港|🇭🇰|HK|(?i)Hong"
+    icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Hong_Kong.png
+    interval: 120
+    lazy: true
+    tolerance: 50
+    type: fallback
+    include-all: true
+    use:
+      - Amy
+      - Maker
+  - name: TW 台湾
+    filter: "台|🇹🇼|湾|TW|(?i)Taiwan"
+    icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Taiwan.png
+    interval: 120
+    lazy: true
+    tolerance: 50
+    type: fallback
+    include-all: true
+    use:
+      - Amy
+      - Maker
+  - name: SG 新加坡
+    filter: "新加坡|坡|狮城|🇸🇬|SG|(?i)Singapore"
+    icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Singapore.png
+    interval: 120
+    lazy: true
+    tolerance: 50
+    type: fallback
+    include-all: true
+    use:
+      - Amy
+      - Maker
+  - name: JP 日本
+    filter: "日|🇯🇵|东京|JP|(?i)Japan"
+    icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Japan.png
+    interval: 120
+    lazy: true
+    tolerance: 50
+    type: fallback
+    include-all: true
+    use:
+      - Amy
+      - Maker
+  - name: US 美国
+    filter: "美|🇺🇲|US|(?i)States|America"
+    icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/United_States.png
+    interval: 120
+    lazy: true
+    tolerance: 50
+    type: fallback
+    include-all: true
+    use:
+      - Amy
+      - Maker
+script:
+  shortcuts:
+    quic: network == 'udp' and dst_port == 443
+dns:
+  default-nameserver:
+    - 223.6.6.6
+    - 119.29.29.29
+    - system
+  nameserver:
+    - 223.6.6.6
+    - 119.29.29.29
+log-level: warning
+mode: rule
+rule-providers:
+  directgb:
+    behavior: "classical"
+    interval: 7200
+    url: https://raw.githubusercontent.com/SICKCAT2/Surge/master/rule/directgb.yaml
+    format: yaml
+  LocalAreaNetwork:
+    behavior: "classical"
+    interval: 7200
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/LocalAreaNetwork.list
+    format: yaml
+  UnBan:
+    behavior: "classical"
+    interval: 7200
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/UnBan.list
+    format: yaml
+  BanAD:
+    behavior: "classical"
+    interval: 7200
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanAD.list
+    format: yaml
+  BanProgramAD:
+    behavior: "classical"
+    interval: 7200
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanProgramAD.list
+    format: yaml
+  GoogleFCM:
+    behavior: "classical"
+    interval: 7200
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/GoogleFCM.list
+    format: yaml
+  GoogleCN:
+    behavior: "classical"
+    interval: 7200
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/GoogleCN.list
+    format: yaml
+  SteamCN:
+    behavior: "classical"
+    interval: 7200
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/SteamCN.list
+    format: yaml
+  Ⓜ️ 微软Bing:
+    behavior: "classical"
+    interval: 7200
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Bing.list
+    format: yaml
+  Bing:
+    behavior: "classical"
+    interval: 7200
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/OneDrive.list
+    format: yaml
+  OneDrive:
+    behavior: "classical"
+    interval: 7200
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/OneDrive.list
+    format: yaml
+  Microsoft:
+    behavior: "classical"
+    interval: 7200
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Microsoft.list
+    format: yaml
+  TikTok:
+    behavior: "classical"
+    interval: 7200
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR//master/Clash/Ruleset/TikTok.list
+    format: yaml
+  DisneyPlus:
+    behavior: "classical"
+    interval: 7200
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/DisneyPlus.list
+    format: yaml
+  Apple:
+    behavior: "classical"
+    interval: 7200
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Apple.list
+    format: yaml
+  Telegram:
+    behavior: "classical"
+    interval: 7200
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Telegram.list
+    format: yaml
+  OpenAi:
+    behavior: "classical"
+    interval: 7200
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/OpenAi.list
+    format: yaml
+  Epic:
+    behavior: "classical"
+    interval: 7200
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Epic.list
+    format: yaml
+  Origin:
+    behavior: "classical"
+    interval: 7200
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Origin.list
+    format: yaml
+  Sony:
+    behavior: "classical"
+    interval: 7200
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Sony.list
+    format: yaml
+  Steam:
+    behavior: "classical"
+    interval: 7200
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Steam.list
+    format: yaml
+  Nintendo:
+    behavior: "classical"
+    interval: 7200
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Nintendo.list
+    format: yaml
+  YouTube:
+    behavior: "classical"
+    interval: 7200
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/YouTube.list
+    format: yaml
+  Netflix:
+    behavior: "classical"
+    interval: 7200
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Netflix.list
+    format: yaml
+  Bahamut:
+    behavior: "classical"
+    interval: 7200
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Bahamut.list
+    format: yaml
+  BilibiliHMT:
+    behavior: "classical"
+    interval: 7200
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/BilibiliHMT.list
+    format: yaml
+  Bilibili:
+    behavior: "classical"
+    interval: 7200
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Bilibili.list
+    format: yaml
+  ChinaMedia:
+    behavior: "classical"
+    interval: 7200
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaMedia.list
+    format: yaml
+  ProxyMedia:
+    behavior: "classical"
+    interval: 7200
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyMedia.list
+    format: yaml
+  ProxyGFWlist:
+    behavior: "classical"
+    interval: 7200
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyGFWlist.list
+    format: yaml
+  ChinaDomain:
+    behavior: "classical"
+    interval: 7200
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaDomain.list
+    format: yaml
+  ChinaCompanyIp:
+    behavior: "classical"
+    interval: 7200
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaCompanyIp.list
+    format: yaml
+  Download:
+    behavior: "classical"
+    interval: 7200
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Download.list
+    format: yaml
+rules:
+  - RULE-SET,directgb,🎯 全球直连
+  - RULE-SET,LocalAreaNetwork,🎯 全球直连
+  - RULE-SET,UnBan,🎯 全球直连
+  - RULE-SET,BanAD,🛑 广告拦截
+  - RULE-SET,BanProgramAD,🛑 广告拦截
+  - RULE-SET,GoogleFCM,📢 谷歌FCM
+  - RULE-SET,GoogleCN,🎯 全球直连
+  - RULE-SET,SteamCN,🎯 全球直连
+  - RULE-SET,Bing,Ⓜ️ 微软Bing
+  - RULE-SET,OneDrive,Ⓜ️ 微软云盘
+  - RULE-SET,Microsoft,Ⓜ️ 微软服务
+  - RULE-SET,TikTok,🎥 TikTok
+  - RULE-SET,DisneyPlus,🎥 DisneyPlus
+  - RULE-SET,Apple,🍎 苹果服务
+  - RULE-SET,Telegram,📲 Telegram
+  - RULE-SET,OpenAi,💬 OpenAi
+  - RULE-SET,Epic,🎮 游戏平台
+  - RULE-SET,Origin,🎮 游戏平台
+  - RULE-SET,Sony,🎮 游戏平台
+  - RULE-SET,Steam,🎮 游戏平台
+  - RULE-SET,Nintendo,🎮 游戏平台
+  - RULE-SET,YouTube,📹 YouTube
+  - RULE-SET,Netflix,🎥 Netflix
+  - RULE-SET,Bahamut,📺 巴哈姆特
+  - RULE-SET,BilibiliHMT,📺 哔哩哔哩
+  - RULE-SET,Bilibili,📺 哔哩哔哩
+  - RULE-SET,ChinaMedia,🌏 国内媒体
+  - RULE-SET,ProxyMedia,🌍 国外媒体
+  - RULE-SET,ProxyGFWlist,🐱 PROXY
+  - RULE-SET,ChinaDomain,🎯 全球直连
+  - RULE-SET,ChinaCompanyIp,🎯 全球直连
+  - RULE-SET,Download,🎯 全球直连
+  - GEOIP,CN,🎯 全球直连
+  - MATCH,🐟 漏网之鱼
